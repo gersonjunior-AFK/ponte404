@@ -2,6 +2,8 @@
 
 Uma agenda visual de rolês em Brasília. A página reúne eventos de música, comida, arte e atividades ao ar livre, com busca, filtros por categoria e favoritos salvos no navegador.
 
+[Acessar o site publicado — Bora DF](https://gersonjunior-afk.github.io/ponte404/)
+
 ## Como abrir
 
 Abra o arquivo `index.html` em um navegador. Não é necessário instalar dependências nem iniciar um servidor.
