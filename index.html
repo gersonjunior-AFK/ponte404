@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="Shows, feiras, comida boa e bons encontros em Brasília. Encontre seu próximo rolê.">
+  <title>Bora DF — a cidade te espera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" aria-label="Bora DF, início"><span class="wordmark-icon">b.</span><span>bora<span class="wordmark-city">df</span></span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="nav-link active" href="#agenda">Agenda</a>
+      <a class="nav-link" href="#sobre">Sobre Brasília</a>
+    </nav>
+    <a class="topbar-cta" href="#agenda">Achar meu rolê <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=2200&q=85" alt="Multidão curtindo um show ao ar livre" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> BRASÍLIA, DF <span class="eyebrow-divider">/</span> 02—04 OUT</p>
+        <h1 id="hero-title">Seu próximo<br>rolê começa <span>aqui.</span></h1>
+        <p class="hero-subtitle">A cidade tá cheia de coisa boa.<br>A gente te ajuda a encontrar.</p>
+        <a class="hero-button" href="#agenda">Explorar a agenda <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-note"><span class="note-star">✳</span><span>FEITO PRA QUEM<br>GOSTA DE SAIR</span></div>
+      <div class="hero-index">15° 47' S&nbsp; / &nbsp;47° 52' W</div>
+    </section>
+
+    <section class="agenda-section" id="agenda" aria-labelledby="agenda-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">FIM DE SEMANA <span>·</span> EDIÇÃO 40</p>
+          <h2 id="agenda-title">O que vai rolar<span class="heading-period">.</span></h2>
+        </div>
+        <p class="section-aside">Planos bons, pertinho<br>de você. <span>02 a 04 de outubro</span></p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filtrar eventos por categoria">
+          <button class="filter-button selected" type="button" data-category="Todos" aria-pressed="true">Tudo <span class="filter-count" data-count="Todos"></span></button>
+          <button class="filter-button" type="button" data-category="Música" aria-pressed="false">Música</button>
+          <button class="filter-button" type="button" data-category="Comida" aria-pressed="false">Comida</button>
+          <button class="filter-button" type="button" data-category="Arte" aria-pressed="false">Arte</button>
+          <button class="filter-button" type="button" data-category="Ao ar livre" aria-pressed="false">Ao ar livre</button>
+        </div>
+        <div class="toolbar-actions">
+          <label class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7.5"></circle><path d="m16.5 16.5 4 4"></path></svg>
+            <input id="event-search" type="search" placeholder="Buscar rolê" aria-label="Buscar eventos por nome ou local">
+            <kbd>/</kbd>
+          </label>
+          <button class="saved-toggle" id="saved-toggle" type="button" aria-pressed="false" aria-label="Mostrar eventos salvos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4.75A1.75 1.75 0 0 1 7.75 3h8.5A1.75 1.75 0 0 1 18 4.75V21l-6-3.8L6 21V4.75Z"></path></svg>
+            <span>Salvos</span><span class="saved-number" id="saved-number">0</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="results-line"><span id="results-count" aria-live="polite"></span><span class="results-location"><span class="location-pin">⌖</span> Brasília e arredores</span></div>
+      <div class="event-grid" id="event-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-mark">∅</span>
+        <h3>Nenhum rolê por aqui.</h3>
+        <p>Tenta buscar outra coisa ou mudar o filtro.</p>
+        <button type="button" id="clear-filters">Limpar filtros</button>
+      </div>
+    </section>
+
+    <section class="city-strip" id="sobre">
+      <div class="strip-mark" aria-hidden="true">✳</div>
+      <p>Brasília é grande.<br><span>Seu mundo não precisa ser.</span></p>
+      <a href="#agenda" aria-label="Ver a agenda de Brasília">↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="wordmark footer-mark" href="#inicio"><span class="wordmark-icon">b.</span><span>bora<span class="wordmark-city">df</span></span></a>
+    <span>Feito no quadradinho, com vontade de sair.</span>
+    <a class="back-top" href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+</body>
+</html>
