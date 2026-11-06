@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { ProfilePage } from "@/components/ponte-real";
+export const Route=createFileRoute("/_authenticated/perfil")({head:()=>({meta:[{title:"Perfil — Ponte 404"},{name:"description",content:"Conheça a jornada na Ponte 404."},{property:"og:title",content:"Perfil — Ponte 404"},{property:"og:description",content:"Uma conta, muitas formas de crescer."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:ProfilePage});

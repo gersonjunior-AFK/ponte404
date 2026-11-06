@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { CommunityPage } from "@/components/ponte-app";
+export const Route = createFileRoute("/_authenticated/comunidade")({ head: () => ({ meta: [{ title: "Comunidade — Ponte 404" }, { name: "description", content: "Professores e voluntários publicam dicas e conhecimento." }, { property: "og:title", content: "Comunidade — Ponte 404" }, { property: "og:description", content: "Conhecimento compartilhado como numa rede social." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: CommunityPage });

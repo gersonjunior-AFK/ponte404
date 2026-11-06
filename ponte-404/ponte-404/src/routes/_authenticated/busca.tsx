@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { SearchPage } from "@/components/ponte-real";
+export const Route=createFileRoute("/_authenticated/busca")({head:()=>({meta:[{title:"Busca — Ponte 404"},{name:"description",content:"Encontre professores e voluntários."},{property:"og:title",content:"Busca — Ponte 404"},{property:"og:description",content:"Encontre sua próxima conexão."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:SearchPage});

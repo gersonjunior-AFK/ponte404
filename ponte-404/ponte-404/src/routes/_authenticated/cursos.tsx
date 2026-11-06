@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { CoursesPage } from "@/components/ponte-app";
+export const Route=createFileRoute("/_authenticated/cursos")({head:()=>({meta:[{title:"Cursos — Ponte 404"},{name:"description",content:"Explore trilhas e cursos gratuitos."},{property:"og:title",content:"Cursos — Ponte 404"},{property:"og:description",content:"Aprenda no seu ritmo."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:CoursesPage});

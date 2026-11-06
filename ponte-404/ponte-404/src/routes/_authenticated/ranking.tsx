@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { RankingPage } from "@/components/ponte-app";
+export const Route=createFileRoute("/_authenticated/ranking")({head:()=>({meta:[{title:"Ranking — Ponte 404"},{name:"description",content:"Conheça os educadores de maior impacto."},{property:"og:title",content:"Ranking — Ponte 404"},{property:"og:description",content:"Quem transforma, inspira."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:RankingPage});

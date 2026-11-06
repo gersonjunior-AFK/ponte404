@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { UsersPage } from "@/components/ponte-real";
+export const Route=createFileRoute("/_authenticated/usuarios")({head:()=>({meta:[{title:"Usuários — Ponte 404"},{name:"description",content:"Gestão segura da comunidade Ponte 404."},{property:"og:title",content:"Usuários — Ponte 404"},{property:"og:description",content:"Gestão da comunidade."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:UsersPage});

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { SettingsPage } from "@/components/ponte-real";
+export const Route = createFileRoute("/_authenticated/configuracoes")({ head: () => ({ meta: [{ title: "Configurações — Ponte 404" }, { name: "description", content: "Aparência, notificações, privacidade e conta." }, { property: "og:title", content: "Configurações — Ponte 404" }, { property: "og:description", content: "Aparência, notificações, privacidade e conta." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: SettingsPage });

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { NotificationsPage } from "@/components/ponte-real";
+export const Route = createFileRoute("/_authenticated/notificacoes")({ head: () => ({ meta: [{ title: "Notificações — Ponte 404" }, { name: "description", content: "Sua central de avisos de aulas e solicitações." }, { property: "og:title", content: "Notificações — Ponte 404" }, { property: "og:description", content: "Sua central de avisos de aulas e solicitações." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }), component: NotificationsPage });

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { DashboardPage } from "@/components/ponte-real";
+export const Route = createFileRoute("/_authenticated/dashboard")({ head:()=>({meta:[{title:"Início — Ponte 404"},{name:"description",content:"Acompanhe sua jornada de aprendizagem."},{property:"og:title",content:"Início — Ponte 404"},{property:"og:description",content:"Sua jornada de aprendizagem em um só lugar."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}), component: DashboardPage });

@@ -1,0 +1,2 @@
+import { createFileRoute } from "@tanstack/react-router"; import { LessonsPage } from "@/components/ponte-real";
+export const Route=createFileRoute("/_authenticated/aulas")({head:()=>({meta:[{title:"Aulas — Ponte 404"},{name:"description",content:"Organize e acompanhe suas aulas."},{property:"og:title",content:"Aulas — Ponte 404"},{property:"og:description",content:"Seus encontros de aprendizagem."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:LessonsPage});
